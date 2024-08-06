@@ -1,0 +1,11 @@
+#!/bin/bash
+
+current_layout=$(setxkbmap -query | grep layout | awk '{print $2}')
+if [ "$current_layout" == "us" ]; then
+    setxkbmap -layout ir
+else
+    setxkbmap -layout us
+fi
+dunstify -t 1000 -r 2593 -u normal -i keyboard  "Keyboard Layout" "Switched to $current_layout"
+
+

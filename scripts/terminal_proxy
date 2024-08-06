@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+if [ -f /tmp/proxyActive ]; then
+    source /tmp/proxyActive
+else
+    export Proxy_version=0
+fi
+
+if [ "$Proxy_version" -eq 0 ]; then
+    dunstify -t 1000 -r 2593 -u normal "set to Farzam Proxy"
+    export Proxy_version=1
+elif [ "$Proxy_version" -eq 1 ]; then
+    export Proxy_version=2
+    dunstify -t 1000 -r 2593 -u normal "set to Oblivion Proxy"
+elif [ "$Proxy_version" -eq 2 ]; then
+    export Proxy_version=0
+    dunstify -t 1000 -r 2593 -u normal "set to No Proxy"
+fi
+
+echo "export Proxy_version=$Proxy_version" > /tmp/proxyActive
+
+if [ "$Proxy_version" -eq 0 ]; then
+    echo ""
+elif [ "$Proxy_version" -eq 1 ]; then
+    echo ""
+elif [ "$Proxy_version" -eq 2 ]; then
+    echo ""
+fi
+
