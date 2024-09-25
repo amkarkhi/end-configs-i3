@@ -18,12 +18,3 @@ elif [ "$Proxy_version" -eq 2 ]; then
 fi
 
 echo "export Proxy_version=$Proxy_version" > /tmp/proxyActive
-
-if [ "$Proxy_version" -eq 0 ]; then
-    echo ""
-elif [ "$Proxy_version" -eq 1 ]; then
-    echo ""
-elif [ "$Proxy_version" -eq 2 ]; then
-    echo ""
-fi
-

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+if [ -f /tmp/proxyActive ]; then
+    source /tmp/proxyActive
+fi
+
+if [ "$Proxy_version" -eq 1 ]; then
+    echo ""
+elif [ "$Proxy_version" -eq 2 ]; then
+    echo ""
+else
+    echo ""
+fi
+
