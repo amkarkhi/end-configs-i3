@@ -24,7 +24,7 @@
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 # font pango: Noto Sans Regular 11
-font pango: Fira Code Retina 11
+font pango: Fira Code Retina 12
 
 
 # set the mod key to the winkey:
@@ -188,9 +188,9 @@ bindsym $mod+Shift+e exec --no-startup-id ~/.config/i3/scripts/powermenu
 
 # Lock the system
 # lock with a picture:
-#bindsym $mod+l exec --no-startup-id i3lock -i  ~/.config/i3/i3-lock-screen.png -p default|win -t
+# bindsym $mod+Shift+semicolon exec --no-startup-id i3lock -i  ~/.config/i3/i3-lock-screen.png -p default|win -t
 # lock by blurring the screen:
-bindsym $mod+Shift+m exec --no-startup-id ~/.config/i3/scripts/blur-lock
+bindsym $mod+Shift+semicolon exec --no-startup-id ~/.config/i3/scripts/blur-lock
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -315,8 +315,8 @@ set $ws5 "5: "
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10:" 
+set $ws9 "9:"
+set $ws10 "10:" 
 
 # use workspaces on different displays:
 # where you have to replace VGA-0/HDMI-0 with the names for your displays
