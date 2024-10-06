@@ -30,6 +30,7 @@ font pango: Fira Code Retina 12
 # set the mod key to the winkey:
 set $mod Mod4
 set $alt Mod1
+set $BROWSER /usr/bin/google-chrome-stable
 
 #####################
 # workspace layout: #
