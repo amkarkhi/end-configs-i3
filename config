@@ -33,6 +33,8 @@ set $alt Mod1
 
 set $browser /bin/google-chrome-stable
 set $BROWSER /bin/google-chrome-stable
+set $TERMINAL /bin/kitty
+set $terminal /bin/kitty
 
 #####################
 # workspace layout: #
