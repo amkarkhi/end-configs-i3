@@ -348,6 +348,7 @@ assign [class="TelegramDesktop"] $ws5
 assign [class="discord"] $ws5
 assign [class="Alacritty"] $ws9
 assign [class="(?i)slack"] $ws10
+assign [class="Microsoft Teams - Preview"] $ws10
 
 # automatic set focus new window if it opens on another workspace than the current:
 for_window [class=Xfce4-terminal] focus
@@ -364,6 +365,7 @@ for_window [class=discord] focus
 for_window [class=Alacritty] focus
 for_window [class=oblivion-desktop] focus
 for_window [class=(?i)slack] focus
+for_window [class="Microsoft Teams - Preview"] focus
 
 
 ##############
