@@ -210,8 +210,8 @@ bindsym F1 exec --no-startup-id ~/.config/i3/scripts/keyhint-2
 # bindsym $mod+F1 exec --no-startup-id xed ~/.config/i3/keybindings
 
 # Backlight control
-#bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight +10 && notify-send "Brightness - $(xbacklight -get | cut -d '.' -f 1)%"
-#bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -10 && notify-send "Brightness - $(xbacklight -get | cut -d '.' -f 1)%"
+# bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight +10 && notify-send "Brightness - $(xbacklight -get | cut -d '.' -f 1)%"
+# bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -10 && notify-send "Brightness - $(xbacklight -get | cut -d '.' -f 1)%"
 # Backlight setting using dunst osc
 bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh brightness_up
 bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh brightness_down
@@ -339,6 +339,7 @@ assign [class="kitty"] $ws1
 assign [class="oblivion-desktop"] $ws4
 assign [class="obsidian"] $ws3
 assign [class="(?i)firefox"] $ws2
+assign [class="(?i)vivaldi-stable"] $ws2
 assign [class="(?i)google-chrome"] $ws2
 assign [class="(?i)jetbrains-datagrip"] $ws8
 assign [class="Postman"] $ws7
@@ -355,6 +356,7 @@ for_window [class=Xfce4-terminal] focus
 for_window [class=kitty] focus
 for_window [class=obsidian] focus
 for_window [class=(?i)firefox] focus
+for_window [class=(?i)vivaldi-stable] focus
 for_window [class=(?i)google-chrome] focus
 for_window [class=(?i)jetbrains-datagrip] focus
 for_window [class=Postman] focus
